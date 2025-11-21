@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Hello world website editing in Cursor
+		</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<div>
+			<h1>Hello Projects in Programming class</h1>
+			<p>{{ greeting }}</p>
+			<h1>I want the word <span style='color:blue;'>blue</span> to be <span style='color:blue;'>blue</span><h1>
+		</div>
+		<img src="https://i.guim.co.uk/img/media/327aa3f0c3b8e40ab03b4ae80319064e401c6fbc/377_133_3542_2834/master/3542.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=34d32522f47e4a67286f9894fc81c863" width=120>
+		<a href=https://developer.mozilla.org/en-US/docs/Web/HTML">Link to google.com</a>
+
+		<div>	
+			<input placeholder="Type your name here" id="name" name="name"></input>
+		</div>
+		<div>
+			<button id="helloBtn">click me!</button>
+		</div>
+
+		<form action="/" method="POST">
+			<div>	
+				<input placeholder="Type custom greeting" id="name" name="customGreeting"></input>
+			</div>
+			<div>
+				<button id="submitBtn">Submit</button>
+			</div>
+		</form>
+
+		<footer>copyright 2025</footer>
+
+		<script src="{{url_for('static', filename='hello_world.js') }}"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='hello_world.css') }}">
+
+	</body>
+</html>
